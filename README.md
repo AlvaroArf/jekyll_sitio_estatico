@@ -5,7 +5,7 @@
 Si usted quiere llevarse el repositorio a su equipo físico, no necesita mas que tener instalado Ruby y la gema indicada en el primer paso de la instalación
 
 ## Instalación
-Para comenzar, debemos instalar jekyll en nuestro equipo, para ello instalaremos las siguientes gemas
+Para comenzar, debemos instalar jekyll en nuestro equipo, para ello instalaremos la siguiente gema
 
   	$ gem install jekyll bundler
 
