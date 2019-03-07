@@ -1,11 +1,17 @@
 # Sitio web estático con Jekyll
 > Para realizar los siguientes pasos, antes debemos de tener Ruby instalado.
 
-## Git Clone - TENGO QUE COMPROBARLO
-Si usted quiere llevarse el repositorio a su equipo físico, no necesita mas que tener instalado Ruby y la gema indicada en el primer paso de la instalación
+## Git Clone
+Si usted quiere llevarse el repositorio a su equipo físico, no necesita mas que tener instalado Ruby y las gemas indicadas en el primer paso de la instalación
+
+Comando para poner en marcha jekyll (dentro de jekyll_sitio_estatico)
+	
+	$ bundle exec jekyll serve
+	
+Para acceder desde el navegador introducimos `localhost:4000`
 
 ## Instalación
-Para comenzar, debemos instalar jekyll en nuestro equipo, para ello instalaremos la siguiente gema
+Para comenzar, debemos instalar jekyll en nuestro equipo, para ello instalaremos las siguientes gemas
 
   	$ gem install jekyll bundler
 
