@@ -21,10 +21,10 @@ Para crear un nuevo sitio web estático, ejecutamos el siguiente comando en la t
 	$ jekyll new misitio
 
 Al ejecutarlo, Jekyll creará un directorio llamado misitio siguiente estructura:
-INTRODUCIR IMAGEN 1
+<img src="images/1.PNG" />
 
 Debido a que Jekyll es principalmente un generador de blogs, en el directorio **_posts/** almacenaremos todos los artículos que deben aparecer en orden cronológico
-INTRODUCIR IMAGEN 2
+<img src="images/2.PNG" />
 
 #### _Config.yml
 El archivo _config.yml sirve para editar las configuraciones por defecto de Jekyll. Con él podemos controlar la forma en la que Jekyll debe generar los artículos y las páginas web estáticas.
@@ -41,7 +41,7 @@ Por último, para generar el sitio introducimos el siguiente comando dentro de l
 
 	$ bundle exec jekyll serve
 
-INTRODUCIR IMAGEN 3
+<img src="images/3.PNG" />
 
 ### Creación de Artículos
 Para agregar artículos al sitio web estático que acabamos de generar, vamos a crear un nuevo archivo en el directorio _posts/ y lo vamos a nombrar teniendo en cuenta el patrón YYYY-MM-DD-nombre-del-archivo.markdown
@@ -63,8 +63,8 @@ Ejemplo de contenido:
 	Puede encontrar el código fuente de Jekyll en {% include icon-github.html
 	username="jekyll" %} / [6](https://github.com/jekyll/jekyll)
 
-INTRODUCIR IMAGEN 5
-INTRODUCIR IMAGEN 4
+<img src="images/5.PNG" />
+<img src="images/4.PNG" />
 
 ### Agregar páginas al sitio web estático
 Para crear una página estática creamos en el directorio raiz un archivo con extensión md
@@ -90,4 +90,4 @@ Introducimos la siguiente estructura en el archivo y un contenido de ejemplo
 
 La variable permalink se utiliza para manipular la URL de la página. En este caso le indicamos a Jekyll que la URL debe ser /acerca/ y no /acerca.html, la cual sería la URL por defecto.
 
-INTRODUCID CAPTURA 6
+<img src="images/6.PNG" />
