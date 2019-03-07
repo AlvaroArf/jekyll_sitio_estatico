@@ -1,5 +1,5 @@
 #Sitio web estático con Jekyll
-> Para realizar los siguientes pasos, antes debemos de tener Ruby instalado.Para realizar los siguientes pasos, antes debemos de tener Ruby instalado.
+> Para realizar los siguientes pasos, antes debemos de tener Ruby instalado.
 
 ##Git Clone - TENGO QUE COMPROBARLO
 Si usted quiere llevarse el repositorio a su equipo físico, no necesita mas que tener instalado Ruby y la gema indicada en el primer paso de la instalación
