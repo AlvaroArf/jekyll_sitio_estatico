@@ -1,0 +1,76 @@
+---
+layout: post
+title: Ejemplo 3 - Persona.php
+---
+Como último ejemplo, tenemos el script orientado a objetos llamado `personas.php`. 
+
+Este script tendŕa tres propiedades: edad, altura y peso pero además tendrá un metodo para calcular su indice de masa corporal
+
+	<?php
+	class Persona{
+	    public $edad;
+        public $altura;
+        public $peso;
+
+        //getters
+        public function getEdad(){
+                return $this->edad;
+        }
+        public function getPeso(){
+                return $this->peso;
+        }
+        public function getAltura(){
+                return $this->altura;
+        }
+
+
+        //setters
+        public function setEdad($value){
+                $this->edad=$value;
+        }
+
+        public function setAltura($value){
+                $this->altura=$value;
+        }
+
+        public function setPeso($value){
+                $this->peso=$value;
+        }
+
+        //calcula el IMC accediendo a las propiedades
+        public function imc(){
+                return $this->peso / ($this->altura * $this->altura);
+
+        }
+
+        //calcula el IMC accediendo mediante los métodos get
+        public function imc2(){
+                return $this->getPeso() / ($this->getAltura() * $this->getAltura());
+
+        }
+
+	}
+
+A continuación generamos otro script php llamada `index.php`que hará uso de la clase persona
+	
+	<?php
+	//Incluir la clase
+	include "Persona.php";
+
+	//instaciar la clase
+	$maria= new Persona();
+
+	//asignar valores a las propiedades del objeto
+	$maria->setEdad(28);
+	$maria->setAltura(1.75);
+	$maria->setPeso(65);
+
+	echo "<br/>Edad: ".$maria->edad;
+	echo "<br/>Altura: ".$maria->altura;
+	echo "<br/>Peso: ".$maria->peso;
+	echo "<br/>IMC: ".$maria->imc();
+
+
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

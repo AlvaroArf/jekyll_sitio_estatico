@@ -1,0 +1,61 @@
+---
+layout: post
+title: Ejemplo 2 - Coches.php
+---
+En este ejemplo, hemos creado un solo script, en el que generamos una funcion fuera de clase para hacer uso de la misma.
+
+La clase es como una plantilla que define características y funciones. El objeto agrupa los datos de la clase y permite utilizarlos desde una unidad.
+
+	<?php
+	class Coche {
+
+    public $color = 'rojo';
+    public $potencia;
+    public $marca;
+
+    public function getColor()
+    {
+        return $this->color;
+    }
+    public function getPotencia()
+    {
+        return $this->potencia;
+    }
+    public function getMarca()
+    {
+        return $this->marca;
+    }
+}
+
+Por ultimo, creamos una función (fuera de la clase) que devuelve las caracteristicas totales de un objeto coche:
+(<?php sobra, es para darle formato en el md)
+
+	<?php
+	function printCaracteristicas($cocheConcreto)
+    {
+        echo 'Color: '. $cocheConcreto->getColor();
+        echo "\n";
+        echo 'Potencia: '. $cocheConcreto->getPotencia();
+        echo "\n";
+        echo 'Marca: '. $cocheConcreto->getMarca();
+    }
+
+	$miCoche = new Coche();
+$miCoche->color = 'verde';
+$miCoche->potencia = 120;
+$miCoche->marca = 'audi';
+
+	$otroCoche = new Coche();
+$otroCoche->color = 'azul';
+$otroCoche->potencia = 100;
+$otroCoche->marca = 'bmw';
+
+	printCaracteristicas($miCoche);
+	echo "\n";
+	printCaracteristicas($otroCoche);
+
+La función printCaracteristicas() requiere un argumento, $cocheConcreto, que es una instancia de la clase Coche que mostrará las características del propio objeto.
+
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
