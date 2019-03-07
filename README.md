@@ -1,15 +1,15 @@
-#Sitio web estático con Jekyll
+# Sitio web estático con Jekyll
 > Para realizar los siguientes pasos, antes debemos de tener Ruby instalado.
 
-##Git Clone - TENGO QUE COMPROBARLO
+## Git Clone - TENGO QUE COMPROBARLO
 Si usted quiere llevarse el repositorio a su equipo físico, no necesita mas que tener instalado Ruby y la gema indicada en el primer paso de la instalación
 
-##Instalación
+## Instalación
 Para comenzar, debemos instalar jekyll en nuestro equipo, para ello instalaremos la siguiente gema
 
   	$ gem install jekyll bundler
 
-###Creación de sitio web estático
+### Creación de sitio web estático
 Para crear un nuevo sitio web estático, ejecutamos el siguiente comando en la terminal:
 
 	$ jekyll new misitio
@@ -20,13 +20,13 @@ INTRODUCIR IMAGEN 1
 Debido a que Jekyll es principalmente un generador de blogs, en el directorio **_posts/** almacenaremos todos los artículos que deben aparecer en orden cronológico
 INTRODUCIR IMAGEN 2
 
-####_Config.yml
+#### _Config.yml
 El archivo _config.yml sirve para editar las configuraciones por defecto de Jekyll. Con él podemos controlar la forma en la que Jekyll debe generar los artículos y las páginas web estáticas.
 
-####Gemfile
+#### Gemfile
 El archivo Gemfile permite definir las dependencias o librerías de Ruby adicionales que podamos llegar a necesitar al momento de crear el sitio web.
 
-####Archivos .md
+#### Archivos .md
 Finalmente, los archivos con extensión .md o .markdown son los que componen el contenido de las páginas y artículos del sitio web estático. Jekyll los transformará a código HTML en el proceso de compilación.
 
 >Adicionalmente, se instalarán algunas librerías adicionales como son el tema minima y una librería para la generación de feeds RSS.
@@ -37,7 +37,7 @@ Por último, para generar el sitio introducimos el siguiente comando dentro de l
 
 INTRODUCIR IMAGEN 3
 
-###Creación de Artículos
+### Creación de Artículos
 Para agregar artículos al sitio web estático que acabamos de generar, vamos a crear un nuevo archivo en el directorio _posts/ y lo vamos a nombrar teniendo en cuenta el patrón YYYY-MM-DD-nombre-del-archivo.markdown
 
 Ejemplo de contenido:
@@ -60,7 +60,7 @@ Ejemplo de contenido:
 INTRODUCIR IMAGEN 5
 INTRODUCIR IMAGEN 4
 
-###Agregar páginas al sitio web estático
+### Agregar páginas al sitio web estático
 Para crear una página estática creamos en el directorio raiz un archivo con extensión md
 
 	$ vi acerca.md
